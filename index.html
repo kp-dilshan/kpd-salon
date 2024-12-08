@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KPD Salon - Beauty & Styling in Galle, Sri Lanka</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <style>
+        :root {
+            --primary-color: #8B4513;
+            --secondary-color: #F4A460;
+            --light-color: #FFF8DC;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--light-color);
+            color: var(--primary-color);
+        }
+
+        .navbar {
+            background-color: var(--primary-color);
+        }
+
+        .navbar-brand, .navbar-nav .nav-link {
+            color: white !important;
+        }
+
+        .hero-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                      url(img/bg2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    z-index: 2;
+    color: white;
+    max-width: 700px;
+    padding: 20px;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+        .service-card {
+            transition: all 0.3s ease;
+            background-color: white;
+            border: none;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .service-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+        }
+
+        .contact-section {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 50px 0;
+        }
+        .row{
+            margin: auto;
+            width: 100%;
+            padding: 20px;
+
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">KPD Salon</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-section text-white">
+        <div class="container">
+            <h1 class="display-4">KPD Salon</h1>
+            <p class="lead">Professional Beauty & Styling Services in Galle, Sri Lanka</p>
+            <a href="book.html" target="_blank" class="btn btn-light mt-3">Our Services</a>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Services</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card text-center p-4">
+                        <h3>Hair Styling</h3>
+                        <p>Professional cutting, coloring, and styling for all hair types.</p>
+                        <a href="book.html" class="btn btn-dark mt-3">click now</a>
+                    </div>
+                    
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card text-center p-4">
+                        <h3>Bridal Makeup</h3>
+                        <p>Special occasion and wedding makeup services.</p>
+                        <a href="book.html" class="btn btn-dark mt-3">click now</a>
+                    </div>
+
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card service-card text-center p-4">
+                        <h3>Spa Treatments</h3>
+                        <p>Relaxing facial and body treatments to rejuvenate.</p>
+                        <a href="book.html" class="btn btn-dark mt-3">click now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Work</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <img src="img/g/a.jpg" alt="Salon Work" class="img-fluid rounded">
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="img/g/b.jpg" alt="Salon Work" class="img-fluid rounded">
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="img/g/c.jpg" alt="Salon Work"class="img-fluid rounded ">
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <img src="img/g/f.jpg" alt="Salon Work" class="img-fluid rounded">
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="img/g/g.jpg" alt="Salon Work" class="img-fluid rounded">
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="img/g/h.jpg" alt="Salon Work" class="img-fluid rounded">
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="img/g/j.jpg" alt="Salon Work" class="img-fluid rounded">
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="img/g/k.jpg" alt="Salon Work" class="img-fluid rounded">
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="img/g/z.jpg" alt="Salon Work" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Contact Us</h2>
+                    <p>Get in touch with KPD Salon</p>
+                    <p>
+                        <strong>Phone:</strong> +94 756 438 176<br>
+                        <strong>Email:</strong> kpdsalon@gmail.com<br>
+                        <strong>Location:</strong> Galle, Sri Lanka
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" placeholder="Your Message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-light">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p>&copy; 2024 KPD Salon. All Rights Reserved.</p>
+            <div class="social-icons">
+                <a href="#" class="text-white mx-2">Facebook</a>
+                <a href="#" class="text-white mx-2">Instagram</a>
+                <a href="#" class="text-white mx-2">WhatsApp</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and Dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

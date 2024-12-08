@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KPD Salon - Our Services</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <style>
+        :root {
+            --primary-color: #8B4513;
+            --secondary-color: #F4A460;
+            --light-color: #FFF8DC;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--light-color);
+            color: var(--primary-color);
+        }
+
+        .navbar {
+            background-color: var(--primary-color);
+        }
+
+        .service-detail {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .service-detail:hover {
+            transform: scale(1.02);
+        }
+
+        .service-image {
+            height: 300px;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .service-content {
+            padding: 20px;
+        }
+
+        .price-tag {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        /* Booking Modal Styles */
+        #bookingModal .modal-header {
+            background-color: var(--primary-color);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation (Previous code remains the same) -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">KPD Salon</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#service">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#book">Book Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Services Header -->
+    <header class="bg-light py-5 text-center">
+        <div class="container">
+            <h1 class="display-4">Our Professional Services</h1>
+            <p class="lead">Transforming beauty with expertise and care</p>
+        </div>
+    </header>
+
+    <!-- Services Details -->
+    <section id="service" class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Hair Styling Service -->
+                <div class="col-md-4 mb-4">
+                    <div class="service-detail">
+                        <img src="img/hair.jpg" alt="Hair Styling" class="service-image">
+                        <div class="service-content">
+                            <h3>Hair Styling</h3>
+                            <p>Discover your perfect look with our expert hair stylists. From classic cuts to modern trends, we offer personalized styling for every hair type.</p>
+                            <ul>
+                                <li>Precision Haircuts</li>
+                                <li>Color Services</li>
+                                <li>Highlights & Balayage</li>
+                                <li>Styling & Blowouts</li>
+                            </ul>
+                            <span class="price-tag">Starts from LKR 2,500</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bridal Makeup Service -->
+                <div class="col-md-4 mb-4">
+                    <div class="service-detail">
+                        <img src="img/br.jpg" alt="Bridal Makeup" class="service-image">
+                        <div class="service-content">
+                            <h3>Bridal Makeup</h3>
+                            <p>Make your special day unforgettable with our professional bridal makeup services. We create a look that enhances your natural beauty.</p>
+                            <ul>
+                                <li>Bridal Makeup Trial</li>
+                                <li>Wedding Day Makeup</li>
+                                <li>Airbrush Makeup</li>
+                                <li>Bridesmaid Makeup</li>
+                            </ul>
+                            <span class="price-tag">Starts from LKR 5,000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Spa Treatments -->
+                <div class="col-md-4 mb-4">
+                    <div class="service-detail">
+                        <img src="img/spa.jpg" alt="Spa Treatments" class="service-image">
+                        <div class="service-content">
+                            <h3>Spa Treatments</h3>
+                            <p>Relax and rejuvenate with our luxurious spa treatments. We offer a range of services to help you unwind and feel refreshed.</p>
+                            <ul>
+                                <li>Facial Treatments</li>
+                                <li>Body Massages</li>
+                                <li>Skin Treatments</li>
+                                <li>Aromatherapy</li>
+                            </ul>
+                            <span class="price-tag">Starts from LKR 3,500</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nail Services -->
+                <div class="col-md-4 mb-4">
+                    <div class="service-detail">
+                        <img src="img/na.jpg" alt="Nail Services" class="service-image">
+                        <div class="service-content">
+                            <h3>Nail Services</h3>
+                            <p>Pamper your hands and feet with our professional nail care services. From classic manicures to intricate nail art.</p>
+                            <ul>
+                                <li>Manicure</li>
+                                <li>Pedicure</li>
+                                <li>Gel Nails</li>
+                                <li>Nail Art</li>
+                            </ul>
+                            <span class="price-tag">Starts from LKR 1,500</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hair Treatments -->
+                <div class="col-md-4 mb-4">
+                    <div class="service-detail">
+                        <img src="img/ht.jpg" alt="Hair Treatments" class="service-image">
+                        <div class="service-content">
+                            <h3>Hair Treatments</h3>
+                            <p>Revive and restore your hair's health with our specialized treatments. We offer solutions for every hair concern.</p>
+                            <ul>
+                                <li>Deep Conditioning</li>
+                                <li>Keratin Treatment</li>
+                                <li>Scalp Treatments</li>
+                                <li>Hair Repair</li>
+                            </ul>
+                            <span class="price-tag">Starts from LKR 3,000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Men's Grooming -->
+                <div class="col-md-4 mb-4">
+                    <div class="service-detail">
+                        <img src="img/mn.jpg" alt="Men's Grooming" class="service-image">
+                        <div class="service-content">
+                            <h3>Men's Grooming</h3>
+                            <p>Professional grooming services tailored for men. From classic haircuts to modern styles and beard treatments.</p>
+                            <ul>
+                                <li>Haircuts</li>
+                                <li>Beard Styling</li>
+                                <li>Shaving</li>
+                                <li>Grooming Packages</li>
+                            </ul>
+                            <span class="price-tag">Starts from LKR 1,800</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Modal -->
+    <div class="modal fade" id="bookingModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Book an Appointment</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="appointmentForm">
+                        <div class="mb-3">
+                            <label for="clientName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="clientName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="clientPhone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="clientPhone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="clientEmail" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="clientEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="serviceSelect" class="form-label">Select Service</label>
+                            <select class="form-select" id="serviceSelect" required>
+                                <option value="">Choose a Service</option>
+                                <option value="hair-styling">Hair Styling</option>
+                                <option value="bridal-makeup">Bridal Makeup</option>
+                                <option value="spa-treatment">Spa Treatment</option>
+                                <option value="nail-service">Nail Service</option>
+                                <option value="hair-treatment">Hair Treatment</option>
+                                <option value="mens-grooming">Men's Grooming</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="appointmentDate" class="form-label">Preferred Date</label>
+                            <input type="date" class="form-control" id="appointmentDate" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="appointmentTime" class="form-label">Preferred Time</label>
+                            <input type="time" class="form-control" id="appointmentTime" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="additionalNotes" class="form-label">Additional Notes (Optional)</label>
+                            <textarea class="form-control" id="additionalNotes" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Confirm Booking</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Booking Section -->
+    <section id="book" class="bg-light py-5 text-center">
+        <div class="container">
+            <h2>Book Your Service</h2>
+            <p>Ready to transform your look? Schedule an appointment now.</p>
+            <button id="bookNowBtn" class="btn btn-primary btn-lg">Book Now</button>
+        </div>
+    </section>
+
+    <!-- Footer (Previous code remains the same) -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2024 KPD Salon. All Rights Reserved.</p>
+            <p>Contact: +94 756 438 176 | kpdsalon@gmail.com</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript for Booking -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Book Now Button
+            const bookNowBtn = document.getElementById('bookNowBtn');
+            const bookingModal = new bootstrap.Modal(document.getElementById('bookingModal'));
+
+            bookNowBtn.addEventListener('click', function() {
+                bookingModal.show();
+            });
+
+            // Appointment Form Submission
+            const appointmentForm = document.getElementById('appointmentForm');
+            
+            appointmentForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+
+                // Collect form data
+                const formData = {
+                    name: document.getElementById('clientName').value,
+                    phone: document.getElementById('clientPhone').value,
+                    email: document.getElementById('clientEmail').value,
+                    service: document.getElementById('serviceSelect').value,
+                    date: document.getElementById('appointmentDate').value,
+                    time: document.getElementById('appointmentTime').value,
+                    notes: document.getElementById('additionalNotes').value
+                };
+
+                // Simulated booking confirmation (replace with actual backend processing)
+                alert(`Booking Confirmation\n
+Name: ${formData.name}
+Phone: ${formData.phone}
+Email: ${formData.email}
+Service: ${formData.service}
+Date: ${formData.date}
+Time: ${formData.time}
+
+Thank you for booking with KPD Salon!
+We will confirm your appointment shortly.`);
+
+                // Reset form and close modal
+                appointmentForm.reset();
+                bookingModal.hide();
+            });
+
+            // Additional form validations
+            const inputs = appointmentForm.querySelectorAll('input, select, textarea');
+            inputs.forEach(input => {
+                input.addEventListener('invalid', function() {
+                    this.classList.add('is-invalid');
+                });
+
+                input.addEventListener('input', function() {
+                    this.classList.remove('is-invalid');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
